@@ -1,0 +1,43 @@
+{
+  "name": "angular-commonmark",
+  "version": "0.0.7",
+  "authors": [
+    "J. Harshbarger"
+  ],
+  "description": "AngularJS Markdown using CommonMark.",
+  "main": "angular-commonmark.js",
+  "keywords": [
+    "angularjs",
+    "markdown",
+    "CommonMark",
+    "directive",
+    "filter"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": ">= 1.2.5",
+    "commonmark": "~0.18.1"
+  },
+  "devDependencies": {
+    "angular-mocks": ">= 1.2.5",
+    "angular-sanitize": "~1.2.25"
+  },
+  "homepage": "https://github.com/Hypercubed/angular-commonmark",
+  "_release": "0.0.7",
+  "_resolution": {
+    "type": "version",
+    "tag": "v0.0.7",
+    "commit": "1a0fd81bb22b3bc30afd9b5b8b06b4d8c4c8884b"
+  },
+  "_source": "git://github.com/Hypercubed/angular-commonmark.git",
+  "_target": "~0.0.7",
+  "_originalSource": "Hypercubed/angular-commonmark",
+  "_direct": true
+}

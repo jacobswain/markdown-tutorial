@@ -1,0 +1,36 @@
+<div ng-controller="lessonCtrl as vm">
+    <div class="row">
+        <div class="col-sm-4">
+
+            <div class="row">
+                <div class="col-xs-8">
+                    <h3>Paragraphs</h3>
+                </div>
+                <div class="col-xs-4">
+                    <nav-list></nav-list>
+                </div>
+            </div>
+
+
+            <p>Paragraphs in Markdown are just one or more lines of consecutive text followed by one or more blank
+                lines.
+            </p>
+            <pre>
+                <p>
+                    Watson is an artificially intelligent computer system capable of answering questions posed in natural language.
+                </p>
+                <p>
+                    Watson was named after IBM's first CEO and industrialist Thomas J. Watson.
+                </p>
+            </pre>
+        </div>
+        <div class="col-sm-4">
+            <editor text="vm.lesson.text"></editor>
+        </div>
+        <div class="col-sm-4">
+            <result text="vm.lesson.text"></result>
+        </div>
+    </div>
+    <md-footer number="vm.state.next"></md-footer>
+</div>
+

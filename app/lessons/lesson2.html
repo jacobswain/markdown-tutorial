@@ -1,0 +1,41 @@
+<div ng-controller="lessonCtrl as vm">
+    <div class="row">
+        <div class="col-sm-4">
+
+            <div class="row">
+                <div class="col-xs-8">
+                    <h3>Headings</h3>
+                </div>
+                <div class="col-xs-4">
+                    <nav-list></nav-list>
+                </div>
+            </div>
+
+            <p>
+                You can create a heading by adding one or more <code>#</code> symbols before your heading text. The number of <code>#</code> you
+                use will determine the size of the heading.
+            </p>
+
+        <pre>
+            <p>
+                # The largest heading (an h1 tag)
+            </p>
+
+            <p>
+                ## The second largest heading (an h2 tag)
+            </p>
+
+
+        </pre>
+        </div>
+        <div class="col-sm-4">
+            <editor text="vm.lesson.text"></editor>
+        </div>
+        <div class="col-sm-4">
+            <result text="vm.lesson.text"></result>
+        </div>
+    </div>
+
+    <md-footer number="vm.state.next"></md-footer>
+
+</div>

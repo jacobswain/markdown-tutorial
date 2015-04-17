@@ -1,0 +1,39 @@
+<div ng-controller="lessonCtrl as vm">
+    <div class="row">
+        <div class="col-sm-4">
+
+            <div class="row">
+                <div class="col-xs-8">
+                    <h3>Blockquotes</h3>
+                </div>
+                <div class="col-xs-4">
+                    <nav-list></nav-list>
+                </div>
+            </div>
+
+            <p>
+                You can show blockquotes with the <code>></code> character.
+            </p>
+
+        <pre>
+            <p>
+                In the words of Bruce Lee:
+            </p>
+<p>
+    > Do not pray for an easy life, pray for strength to endure a difficult one.
+</p>
+
+
+        </pre>
+        </div>
+        <div class="col-sm-4">
+            <editor text="vm.lesson.text"></editor>
+        </div>
+        <div class="col-sm-4">
+            <result text="vm.lesson.text"></result>
+        </div>
+    </div>
+
+    <md-footer number="vm.state.next"></md-footer>
+
+</div>
