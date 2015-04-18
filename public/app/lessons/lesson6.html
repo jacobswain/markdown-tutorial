@@ -1,0 +1,47 @@
+<div ng-controller="lessonCtrl as vm">
+    <div class="row">
+        <div class="col-sm-4">
+
+            <div class="row">
+                <div class="col-xs-8">
+                    <h3>Ordered Lists</h3>
+                </div>
+                <div class="col-xs-4">
+                    <nav-list></nav-list>
+                </div>
+            </div>
+
+            <p>
+                You can make an ordered list by preceding list items with a number.
+            </p>
+
+        <pre>
+            <p>1. Item 1</p>
+            <p>2. Item 2</p>
+            <p>3. Item 3</p>
+        </pre>
+
+
+        </div>
+        <div class="col-sm-4">
+            <editor text="vm.lesson.text"></editor>
+        </div>
+        <div class="col-sm-4">
+            <result text="vm.lesson.text"></result>
+        </div>
+    </div>
+
+    <md-footer number="vm.state.next"></md-footer>
+
+</div>
+
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-61916780-1', 'auto');
+    ga('send', 'pageview');
+
+</script>

@@ -1,0 +1,21 @@
+
+<nav class="navbar navbar-default navbar-fixed-bottom">
+    <div class="container-fluid">
+        <div class="navbar-btn navbar-left hidden-xs" ng-show="previous > 0">
+            <a class="btn btn-success" ng-href="#/lesson/{{previous}}">
+                <i class="fa fa-arrow-left"></i>
+                PREVIOUS
+            </a>
+        </div>
+        <div class="navbar-btn navbar-right hidden-xs" style="padding-right: 10px!important;" >
+            <a class="btn btn-success" ng-href="#/done" ng-hide="number <= 10">
+                DONE
+            </a>
+
+            <a class="btn btn-success" ng-href="#/lesson/{{number}}" ng-show="number <= 10" id="next" >
+                NEXT
+                <i class="fa fa-arrow-right"></i>
+            </a>
+        </div>
+    </div>
+</nav>

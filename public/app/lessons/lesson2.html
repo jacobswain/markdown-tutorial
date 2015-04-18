@@ -1,0 +1,52 @@
+<div ng-controller="lessonCtrl as vm">
+    <div class="row">
+        <div class="col-sm-4">
+
+            <div class="row">
+                <div class="col-xs-8">
+                    <h3>Headings</h3>
+                </div>
+                <div class="col-xs-4">
+                    <nav-list></nav-list>
+                </div>
+            </div>
+
+            <p>
+                You can create a heading by adding one or more <code>#</code> symbols before your heading text. The number of <code>#</code> you
+                use will determine the size of the heading.
+            </p>
+
+        <pre>
+            <p>
+                # The largest heading (an h1 tag)
+            </p>
+
+            <p>
+                ## The second largest heading (an h2 tag)
+            </p>
+
+
+        </pre>
+        </div>
+        <div class="col-sm-4">
+            <editor text="vm.lesson.text"></editor>
+        </div>
+        <div class="col-sm-4">
+            <result text="vm.lesson.text"></result>
+        </div>
+    </div>
+
+    <md-footer number="vm.state.next"></md-footer>
+
+</div>
+
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-61916780-1', 'auto');
+    ga('send', 'pageview');
+
+</script>

@@ -1,0 +1,51 @@
+#intro{
+    text-align :center;
+    margin-top: 200px;
+}
+
+#view {
+    margin-top: 80px;
+}
+
+pre {
+    text-align : left;
+    white-space: normal;
+    word-break: normal;
+}
+
+div[ng-view].ng-enter {
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+}
+
+
+html, body{
+    min-height: 100%;
+}
+body{
+    position: relative;
+}
+
+.popover {
+    min-width: 300px;
+    z-index: 1000;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 10;
+}
+
+.dropdown-menu {
+    width: 200px!important;
+}
+
+.container{
+    max-width: none !important;
+    width: 970px;
+}
