@@ -14,7 +14,8 @@
             new Lesson("9", '', "\\[Google\\]\\[My First Link\\]\n\n\\[My First Link\\]: http://www.google.com"),
             new Lesson("10", '', "!\\[\\]\\(https://www.google.com/images/srpr/logo11w.png\\)"),
             new Lesson("11", '', "This is `inline code`"),
-            new Lesson("12", '', 'To write output use:\n\n    console.log\\(\'Hello world\'\\)')
+            new Lesson("12", '', 'To write output use:\n\n    console.log\\(\'Hello world\'\\)'),
+            new Lesson("13", '',  '\\\\'+ "\\*Italics\\\\" + "\\*")
         ];
 
         function getLessonData(lessonNumber) {
