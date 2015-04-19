@@ -2,37 +2,19 @@
     "use strict";
 
     var lessonSvc = function ($q) {
-        var lessons = [{
-                number: "1",
-                text: 'In 2011, Watson competed on Jeopardy! against former winners Brad Rutter and Ken Jennings'
-            }, {
-                number: "2",
-                text: '# This is an h1 tag'
-            }, {
-                number: "3",
-                text: "In the words of Bruce Lee:"
-            }, {
-                number: "4",
-                text: "*This text with be italic*"
-            }, {
-                number: "5",
-                text: "* Item 1"
-            }, {
-                number: "6",
-                text: "1. Item 1"
-            }, {
-                number: "7",
-                text: "1. Item 1"
-            }, {
-                number: "8",
-                text: "[Google](http://www.google.com) \n\n "
-            }, {
-                number: "9",
-                text: "The Google Self-Driving Car is a project by [Google][My First Link] that involves developing technology for autonomous cars.\n\n[My First Link]: http://www.google.com"
-            }, {
-                number: "10",
-                text: "![](https://www.google.com/images/srpr/logo11w.png)"
-            }
+        var lessons = [
+            new Lesson("1", '', 'This is paragraph 1\n\nThis is paragraph 2'),
+            new Lesson("2", '', '# This is an h1 tag\n\n## This is an h2 tag'),
+            new Lesson("3", '', "In the words of Bruce Lee:\n\n> Do not pray for an easy life, pray for strength to endure a difficult one"),
+            new Lesson("4", '', "\\*\\*This is bold text\\*\\*"),
+            new Lesson("5", '', "\\* Item 1\n\\* Item 2\n\\* Item 3"),
+            new Lesson("6", '', "1. Item 1\n2. Item 2\n3. Item 3"),
+            new Lesson("7", '', "1. Item 1\n   1. Item 2\n   2. Item 3"),
+            new Lesson("8", '', "\\[Google\\]\\(http://www.google.com\\)"),
+            new Lesson("9", '', "\\[Google\\]\\[My First Link\\]\n\n\\[My First Link\\]: http://www.google.com"),
+            new Lesson("10", '', "!\\[\\]\\(https://www.google.com/images/srpr/logo11w.png\\)"),
+            new Lesson("11", '', "This is `inline code`"),
+            new Lesson("12", '', 'To write output use:\n\n    console.log\\(\'Hello world\'\\)')
         ];
 
         function getLessonData(lessonNumber) {

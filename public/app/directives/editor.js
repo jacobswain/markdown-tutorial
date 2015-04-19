@@ -6,7 +6,16 @@
             restrict: 'E',
             templateUrl: 'app/directives/editor.html',
             scope: {
-                text: '='
+                text: '=',
+                lesson: '='
+            },
+            controller : function($scope){
+                $scope.$watch('text', function(){
+                    if($scope.lesson.isComplete() && !$scope.lesson.notified){
+                        toastr.success('Great job!  Lesson complete.');
+                        $scope.lesson.notified = true;
+                    };
+                })
             }
         }
     });

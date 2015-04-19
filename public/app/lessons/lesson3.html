@@ -15,19 +15,21 @@
                 You can show blockquotes with the <code>></code> character.
             </p>
 
-        <pre>
+            <blockquote>This is a blockquote</blockquote>
+
+            <h3>Example</h3>
+            <hr/>
             <p>
                 In the words of Bruce Lee:
             </p>
-<p>
-    > Do not pray for an easy life, pray for strength to endure a difficult one.
-</p>
 
 
-        </pre>
+        <blockquote>
+            Do not pray for an easy life, pray for strength to endure a difficult one
+        </blockquote>
         </div>
         <div class="col-sm-4">
-            <editor text="vm.lesson.text"></editor>
+            <editor text="vm.lesson.text" lesson="vm.lesson"></editor>
         </div>
         <div class="col-sm-4">
             <result text="vm.lesson.text"></result>
@@ -39,10 +41,17 @@
 </div>
 
 <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function () {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
 
     ga('create', 'UA-61916780-1', 'auto');
     ga('send', 'pageview');
