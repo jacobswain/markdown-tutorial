@@ -37,12 +37,13 @@
         vm.tour.init();
         vm.tour.start();
 
+
         lessonSvc.getLessonData($routeParams.number).then(function (lesson) {
             vm.lesson = lesson;
         });
 
         vm.nextLesson = function () {
-            $window.location = '/lesson/' + parseInt($routeParams) + 1;
+            vm.tour.end();
         }
     }
 

@@ -6,10 +6,17 @@
             restrict: 'E',
             templateUrl: 'app/directives/footer.html',
             scope: {
-                number: '='
+                number: '=',
+                next: '&'
             },
             controller: function ($scope) {
                 $scope.previous = $scope.number - 2;
+
+                $scope.nextLesson = function(){
+                    if($scope.next){
+                        $scope.next();
+                    }
+                }
             }
         }
     };
