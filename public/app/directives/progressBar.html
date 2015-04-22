@@ -1,0 +1,19 @@
+<div class="row">
+    <div class="col-xs-10">
+        <div ng-repeat="lesson in lessons" style="float: left; width: 60px">
+            <a ng-href="#/lesson/{{lesson.number}}" tooltip="Lesson {{lesson.number}} - {{lesson.name}}" tooltip-placement="bottom">
+                <i class="fa fa-circle-o" ng-show="!lesson.complete" style="opacity: .2"></i>
+                <i class="fa fa-dot-circle-o" ng-show="lesson.complete"></i>
+            </a>
+        </div>
+    </div>
+
+    <div class="col-xs-2">
+        <div class="pull-right">
+            {{lesson.order}}
+        </div>
+    </div>
+
+</div>
+
+

@@ -4,7 +4,10 @@
     var navList = function(){
         return {
             restrict : 'E',
-            templateUrl : 'app/directives/navlist.html'
+            templateUrl : 'app/directives/navlist.html',
+            scope : {
+                lessons : '='
+            }
         }
     }
 

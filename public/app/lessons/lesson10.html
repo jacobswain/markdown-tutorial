@@ -1,4 +1,14 @@
 <div ng-controller="lessonCtrl as vm">
+
+    <div class="row" style="margin-bottom: 10px">
+        <div class="col-xs-12">
+
+            <progress-bar lessons="vm.lessonSvc.lessons" lesson="vm.lesson"></progress-bar>
+
+        </div>
+    </div>
+
+
     <div class="row">
         <div class="col-sm-4">
 
@@ -7,7 +17,7 @@
                     <h3>Image Links</h3>
                 </div>
                 <div class="col-xs-4">
-                    <nav-list></nav-list>
+                    <nav-list lessons="vm.lessonSvc.lessons"></nav-list>
                 </div>
             </div>
 

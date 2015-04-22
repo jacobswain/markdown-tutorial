@@ -4,18 +4,8 @@
         <span class="caret"></span>
     </button>
     <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
-        <li role="presentation"><a role="menuitem" tabindex="-1" href="#/lesson/1">Paragraphs</a></li>
-        <li role="presentation"><a role="menuitem" tabindex="-1" href="#/lesson/2">Headings</a></li>
-        <li role="presentation"><a role="menuitem" tabindex="-1" href="#/lesson/3">Blockquotes</a></li>
-        <li role="presentation"><a role="menuitem" tabindex="-1" href="#/lesson/4">Styling Text</a></li>
-        <li role="presentation"><a role="menuitem" tabindex="-1" href="#/lesson/5">Unordered Lists</a></li>
-        <li role="presentation"><a role="menuitem" tabindex="-1" href="#/lesson/6">Ordered Lists</a></li>
-        <li role="presentation"><a role="menuitem" tabindex="-1" href="#/lesson/7">Nested Lists</a></li>
-        <li role="presentation"><a role="menuitem" tabindex="-1" href="#/lesson/8">Inline Hyperlinks</a></li>
-        <li role="presentation"><a role="menuitem" tabindex="-1" href="#/lesson/9">Reference Hyperlinks</a></li>
-        <li role="presentation"><a role="menuitem" tabindex="-1" href="#/lesson/10">Image Links</a></li>
-        <li role="presentation"><a role="menuitem" tabindex="-1" href="#/lesson/11">Inline Code</a></li>
-        <li role="presentation"><a role="menuitem" tabindex="-1" href="#/lesson/12">Predefined Text Blocks</a></li>
-        <li role="presentation"><a role="menuitem" tabindex="-1" href="#/lesson/13">Escape Characters</a></li>
+        <li ng-repeat="lesson in lessons" role="presentation">
+            <a role="menuitem" tabindex="-1" href="#/lesson/{{lesson.number}}">{{lesson.name}}</a>
+        </li>
     </ul>
 </div>
