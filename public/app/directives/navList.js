@@ -6,7 +6,8 @@
             restrict : 'E',
             templateUrl : 'app/directives/navlist.html',
             scope : {
-                lessons : '='
+                lessons : '=',
+                lesson : '='
             }
         }
     }

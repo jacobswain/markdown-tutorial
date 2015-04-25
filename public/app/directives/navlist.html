@@ -1,11 +1,21 @@
 <div class="dropdown pull-right" style="margin-top: 25px">
     <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
-        Lessons
+        {{lesson.order}}
         <span class="caret"></span>
     </button>
     <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
         <li ng-repeat="lesson in lessons" role="presentation">
-            <a role="menuitem" tabindex="-1" href="#/lesson/{{lesson.number}}">{{lesson.name}}</a>
+            <a role="menuitem" tabindex="-1" href="#/lesson/{{lesson.number}}">
+                <span style="margin-left: -10px">
+                       <i class="fa fa-circle-o" ng-show="!lesson.complete"></i>
+                <i class="fa fa-dot-circle-o" ng-show="lesson.complete"></i>
+                </span>
+
+                <span style="margin-left: 20px">
+                    {{lesson.name}}
+                </span>
+
+            </a>
         </li>
     </ul>
 </div>
