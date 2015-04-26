@@ -15,7 +15,8 @@
             new Lesson("10", 'Image Links', '', new Validator(["!\\[\\]\\(https://www.google.com/images/srpr/logo11w.png\\)"])),
             new Lesson("11", 'Code Spans', '', new Validator(["This is `inline code`"])),
             new Lesson("12", 'Code Blocks', '', new Validator(['To write output use:\n\n    console.log\\(\'Hello world\'\\)', 'To write output use:\n    console.log\\(\'Hello world\'\\)'])),
-            new Lesson("13", 'Escape Characters', '', new Validator(["\\\\" + "\\*Italics\\\\" + "\\*"]))
+            new Lesson("13", 'Escape Characters', '', new Validator(["\\\\" + "\\*Italics\\\\" + "\\*"])),
+            new Lesson("14", 'Nesting Code in Lists', '', new Validator(["\\* Item 1\n\n      console.log\\('Hello world'\\)\n\\* Item 2", "\\* Item 1\n\n      console.log\\('Hello world'\\)\n\n\\* Item 2"]))
         ];
 
         function getLessonData(lessonNumber) {
